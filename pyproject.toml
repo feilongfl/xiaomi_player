@@ -10,3 +10,6 @@ dependencies = [
     "jellyfin-apiclient-python>=1.11.0",
     "loguru>=0.7.3",
 ]
+
+[tool.uv.sources]
+jellyfin-apiclient-python = { git = "https://github.com/jellyfin/jellyfin-apiclient-python.git" }

@@ -110,16 +110,12 @@ wheels = [
 [[package]]
 name = "jellyfin-apiclient-python"
 version = "1.11.0"
-source = { registry = "https://pypi.org/simple" }
+source = { git = "https://github.com/jellyfin/jellyfin-apiclient-python.git#4fd9ecf597d9b77b988c8e75c401f0f2559a4e4e" }
 dependencies = [
     { name = "certifi" },
     { name = "requests" },
     { name = "urllib3" },
     { name = "websocket-client" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/c2/b0/61cacc2261f6b1972e4a53d142857def8b4d3b6fbd1481a2257b26e31029/jellyfin_apiclient_python-1.11.0.tar.gz", hash = "sha256:f5e3dc4ea06a80d26859a62ace7c3ab26f762063a3032f9109f4cea2ed8ac5de", size = 62581, upload-time = "2025-03-17T23:11:29.289Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/1f/f3/c5d2ba45e432ed706c705e961c8e2a01c5600f93265279e8d61c61f544ae/jellyfin_apiclient_python-1.11.0-py3-none-any.whl", hash = "sha256:b666c8d175b36f2ce9e6020c13821eb1aa104a585bfbba58f6790fa15f358b40", size = 51475, upload-time = "2025-03-17T23:11:27.91Z" },
 ]
 
 [[package]]
@@ -253,6 +249,6 @@ dependencies = [
 requires-dist = [
     { name = "fire", specifier = ">=0.7.0" },
     { name = "flask", specifier = ">=3.1.1" },
-    { name = "jellyfin-apiclient-python", specifier = ">=1.11.0" },
+    { name = "jellyfin-apiclient-python", git = "https://github.com/jellyfin/jellyfin-apiclient-python.git" },
     { name = "loguru", specifier = ">=0.7.3" },
 ]

@@ -31,7 +31,8 @@
 			"extensions": [
 				"GitHub.copilot-chat",
 				"mhutchie.git-graph",
-				"codezombiech.gitignore"
+				"codezombiech.gitignore",
+				"ms-python.black-formatter"
 			]
 		}
 	}
