@@ -23,9 +23,14 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [
-		65533
-	],
+	"forwardPorts": [65533],
+	"portsAttributes": {
+		"65533/tcp": {
+			"label": "MusicPlayer",
+			"onAutoForward": "notify",
+			"localBindAddress": "0.0.0.0"
+		}
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [

@@ -65,10 +65,10 @@ class JellyfinPlayer:
             "UserId": self.user_id,
             "api_key": self.token,
             "DeviceId": "web-feilong",
-            "AudioCodec": "pcm_s16le",
-            "Container": "wav",
-            "MaxStreamingBitrate": "192000",
-            "Static": "true"  # 不分片（不是 HLS）
+            "AudioCodec": "mp3",        # 转码为 MP3
+            "Container": "mp3",         # 使用 MP3 封装
+            "MaxStreamingBitrate": "192000",  # 可选：控制码率
+            "Static": "true"            # 返回完整流，适合直接播放或下载
         }
         return f"{self.server}/Audio/{item_id}/universal?" + urllib.parse.urlencode(query)
 

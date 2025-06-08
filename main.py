@@ -1,4 +1,4 @@
-from flask import Flask, send_file, redirect
+from flask import Flask, redirect
 from pathlib import Path
 import fire
 
