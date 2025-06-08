@@ -22,3 +22,7 @@
 ## 支持的音乐服务
 - [x] 本地音乐
 - [x] jellyfin
+
+## 感谢
+灵感来自：  
+https://github.com/zanjie1999/httpRandomMusic
